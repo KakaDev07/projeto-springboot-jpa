@@ -22,17 +22,18 @@ public class Product implements Serializable {
     private Double price;
     private String imgUrl;
 
+    @Transient
     private Set<Category> categories = new HashSet<>();
 
     public Product(){
     }
 
-    public Product(String imgUrl, Long id, Double price, String description, String name) {
-        this.imgUrl = imgUrl;
+    public Product(Long id, String name, String description, Double price, String imgUrl) {
         this.id = id;
-        this.price = price;
-        this.description = description;
         this.name = name;
+        this.description = description;
+        this.price = price;
+        this.imgUrl = imgUrl;
     }
 
     public Set<Category> getCategories() {
