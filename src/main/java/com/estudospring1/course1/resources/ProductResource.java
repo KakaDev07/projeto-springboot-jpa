@@ -1,7 +1,6 @@
 package com.estudospring1.course1.resources;
 
 import com.estudospring1.course1.entities.Product;
-import com.estudospring1.course1.entities.User;
 import com.estudospring1.course1.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
